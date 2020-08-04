@@ -1,0 +1,90 @@
+body{
+    background-color: lightgray;
+    font: normal 12pt verdana;
+    
+}
+
+header, h1{
+    text-align: center;
+}
+
+#borradius, #borlarg{
+    width: 50px;
+}
+
+#borda{
+    float: left;
+    margin-left: 250px;
+    padding-top: 50px;
+}
+
+#fundo{
+    float: left;
+    margin-left: 250px;
+    padding-top: 50px;
+}
+
+#botao{
+    clear: both;
+    margin-left:  580px ;
+    margin-top: 50px;
+    width: 120px;
+}
+
+#anitypes{
+    clear: both;
+    margin-left: 250px;
+    padding-top: 50px;
+}
+
+#btn{
+    padding: 10px;
+    position: relative;
+    background: gray;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 400ms ease;
+    font-size: 15px;
+}
+
+#btn:hover {
+    color: rgb(37, 37, 37);
+    background: transparent;
+    box-shadow: inset 0 0 0 3px gray;
+    text-shadow: 1px 1px 3px gray;
+}
+
+#anime{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 150px auto;
+}
+
+@keyframes opacity{
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes escala{
+    0%{
+
+    }
+
+    50%{
+        transform: scale(.5);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Animation </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    
+        <header><h1>Make your own Animation</h1></header>
+        <hr>
+    
+        <div id="anime">
+
+        </div>
+        <hr>
+            <h1>Personalize a forma como quiser</h1>
+        <div id="inputs">
+            <div id="borda">
+                <p><h3>Borda</h3>
+                    
+                    <p>Largura:
+                        <input type="number" id="borlarg" min="0" max="100" onchange="changeLarg(this.value)">
+                    </p>
+                    <p>Cor:
+                        <input type="color" id="borcolor" onchange="changeBorClr(this.value)">
+                    </p>
+                    <p>Arrendondamento de borda:
+                        <input type="number" id="borradius" min="0" max="50" onchange="changeRadius(this.value)">
+                    </p>
+                </p>
+            </div>
+
+            <div id="fundo">
+                <p><h3>Fundo</h3>
+                    <p>Cor de fundo:
+                        <input type="color" id="bgcolor" onchange="changeClr(this.value)">
+                    </p>
+                </p>
+            </div>
+            
+            <div id="anitypes">
+                <h3>Escolha um tipo de animação</h3>
+                <p>
+                    <input type="radio" name="typeani" id="opacity" checked>
+                    <label for="opacity">Opacidade</label>
+                </p>
+                
+                <p>
+                    <input type="radio" name="typeani" id="rotate">
+                    <label for="rotate">Rotacionar</label>
+                </p>
+
+                <p>
+                    <input type="radio" name="typeani" id="escala">
+                    <label for="escala">Alterar escala</label>
+                </p>
+            </div>
+        </div>
+        
+        <div id="botao">
+            <input type="button" value="Iniciar animação" id="btn" onclick="iniciar()">
+        </div>
+</body>
+</html>
